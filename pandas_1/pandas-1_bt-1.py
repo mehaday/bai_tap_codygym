@@ -20,13 +20,12 @@ df['Thanhpho'].replace('Vietnam','hanoi',inplace=True)
 
 
 # 5
-# vitri = df.loc[df.chauluc == 'Asia'].index
-# df.drop(vitri,axis=0,inplace=True)
+vitri = df.loc[df.chauluc == 'Asia'].index
+df.drop(vitri,axis=0,inplace=True)
 
 # 6
 
-# vitri = df.loc[df['GDP( trieu $)'] < 300000].index
+vitri = df.loc[df['GDP( trieu $)'] < 300000].index
 
 
-print(df[-5:])
 
