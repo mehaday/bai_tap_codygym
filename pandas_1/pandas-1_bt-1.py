@@ -1,3 +1,4 @@
+from crypt import METHOD_BLOWFISH
 import pandas as pd
 import numpy as np
 # 1
@@ -26,6 +27,4 @@ df.drop(vitri,axis=0,inplace=True)
 # 6
 
 vitri = df.loc[df['GDP( trieu $)'] < 300000].index
-
-
 
